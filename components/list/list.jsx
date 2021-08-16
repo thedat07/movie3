@@ -4,6 +4,7 @@ import Slider from "react-slick";
 import {helper} from '../../helper/helper'
 import {api} from '../../api/api'
 import { Spin } from 'antd'
+
 export default function Header({ isLoading, isData = {}, isMovie }) {
     const NextArrow = ({ onClick }) => {
         return (
@@ -25,7 +26,7 @@ export default function Header({ isLoading, isData = {}, isMovie }) {
         speed: 300,
         slidesToShow: 4,
         slidesToScroll: 4,
-        centerMode: true,
+        // centerMode: true,
         centerPadding: 0,
         initialSlide: 0,
         nextArrow: <NextArrow />,

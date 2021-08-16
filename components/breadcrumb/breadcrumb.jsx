@@ -1,6 +1,6 @@
 import { Breadcrumb } from 'antd'
 import styled from './breadcrumb.module.css'
-import React, { useState, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { useRouter } from "next/router";
 import Link from 'next/link'
 export default function BreadcrumbPage() {

@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react'
 import { helper } from '../../helper/helper'
 import { api } from '../../api/api'
 import { Spin } from 'antd'
+
 export default function Header() {
     const [loading, setLoading] = useState(false);
     const [dataMovie, setDataMovie] = useState({});

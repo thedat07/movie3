@@ -33,7 +33,7 @@ export default function SinglePost() {
         <h1 className={styled.singlePostTitle}>
           {dataTv.original_name}
           <div className={styled.singlePostIcons}>
-            <a href={dataTv.homepage} target="_blank">
+            <a href={dataTv.homepage} target="_blank" rel = "noopener noreferrer">
               <i className={styled.singlePostIcon + " fas fa-home"}> </i>
             </a>
           </div>

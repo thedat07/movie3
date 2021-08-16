@@ -39,11 +39,11 @@ export default function SinglePost() {
           {dataMovie.original_title}
           <div className={styled.singlePostIcons}>
 
-            <a href={dataMovie.homepage} target="_blank">
+            <a href={dataMovie.homepage} target="_blank" rel = "noopener noreferrer">
               <i className={styled.singlePostIcon + " fas fa-home"}> </i>
             </a>
 
-            <a href={`https://www.imdb.com/title/${dataMovie.imdb_id}/`} target="_blank">
+            <a href={`https://www.imdb.com/title/${dataMovie.imdb_id}/`} target="_blank" rel = "noopener noreferrer">
               <i className={styled.singlePostIcon + " fab fa-imdb"}></i>
             </a>
 

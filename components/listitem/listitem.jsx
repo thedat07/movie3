@@ -1,7 +1,7 @@
 import styled from './listitem.module.css'
 import Link from 'next/link'
 import slugify from 'react-slugify';
-import { Skeleton, Space, Divider, Switch, Form, Radio } from 'antd';
+import Image from 'next/image'
 export default function ListItem({ isImage, isLink, isMovie, isName }) {
     return (
         <>
