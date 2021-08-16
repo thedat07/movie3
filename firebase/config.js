@@ -5,7 +5,7 @@ import "firebase/storage"; // If you need it
 import "firebase/analytics"; // If you need it
 import "firebase/performance"; // If you need it
 
-var firebaseConfig = {
+var clientCredentials = {
   apiKey: "AIzaSyDdaRR02_MwgA7PDeLY5Pbzt42OMthTQdk",
   authDomain: "movie2-54939.firebaseapp.com",
   projectId: "movie2-54939",
@@ -16,8 +16,13 @@ var firebaseConfig = {
 };
 
 if (!firebase.apps.length) {
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
+  firebase.initializeApp(clientCredentials)
+  if (typeof window !== 'undefined') {
+    // Enable analytics. https://firebase.google.com/docs/analytics/get-started
+    if ('measurementId' in clientCredentials) {
+      firebase.analytics()
+    }
+  }
 }
 const auth = firebase.auth();
 const db = firebase.firestore();
