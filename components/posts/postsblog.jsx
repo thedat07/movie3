@@ -45,7 +45,7 @@ export default function Posts() {
     return (
         <div className={style.postBlog}>
             <div className={style.blogLeft} >
-                <i class="fas fa-plus-circle"></i>
+                <i className="fas fa-plus-circle"></i>
             </div>
             <Tabs defaultActiveKey="1" className={style.tab}>
                 <TabPane tab="Blog" key="1" >

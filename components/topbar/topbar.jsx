@@ -63,11 +63,11 @@ export default function TopBar() {
                             TV SHOWS
                         </Link>
                     </li>
-                    <li className={styles.topListItem}>
+                    {/* <li className={styles.topListItem}>
                         <Link href="/blog">
                             BLOG
                         </Link>
-                    </li>
+                    </li> */}
 
                 </ul>
 
