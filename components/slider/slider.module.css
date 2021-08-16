@@ -1,0 +1,13 @@
+
+.slider{
+    flex: 9;
+    overflow: hidden;
+    padding: 20px;
+    padding-right: 0;
+}
+.slider h2{
+    text-align: center;
+    margin: 10px;
+    font-size: 28px;
+    font-family: 'Lora', sans-serif;
+}

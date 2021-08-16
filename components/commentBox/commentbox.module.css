@@ -1,0 +1,49 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.box {
+  width: 100%;
+  box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  padding: 20px;
+  margin: 15px;
+  cursor: pointer;
+}
+.box h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+.comment {
+  height: 80px;
+  width: 100%;
+  border: none;
+  border-bottom: 2px solid #333;
+  background-color: transparent;
+  margin-bottom: 10px;
+  resize: none;
+  outline: none;
+  white-space: pre-wrap;
+}
+.submit,
+.cancel {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+}
+.submit {
+  color: #fff;
+  background-color: #273c75;
+}
+.cancel {
+  color: #333;
+  background-color: transparent;
+}

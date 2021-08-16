@@ -1,0 +1,27 @@
+.posts{
+    flex: 9;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+.tab{
+    margin: 20px;
+    font-size: 18px;
+}
+.tabName{
+    color: aqua;
+}
+.postBlog{
+    flex: 9;
+    margin-top: 20px;
+}
+.blogLeft{
+    float: right;
+    font-size: 30px;
+}
+.blogLeft i{
+    cursor: pointer;
+}
+.blogLeft i:hover{
+    color: green;
+}

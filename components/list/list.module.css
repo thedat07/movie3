@@ -1,0 +1,19 @@
+.container {
+  padding: 40px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+.arrow {
+  background-color: #fff;
+  position: absolute;
+  cursor: pointer;
+  z-index: 10;
+}
+.next {
+  right: 2%;
+  top: 50%;
+}
+.prev {
+  left: 2%;
+  top: 50%;
+}
