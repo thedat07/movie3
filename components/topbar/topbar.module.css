@@ -104,6 +104,10 @@
 }
 .topListItem a {
   color: #666;
+  line-height: 1.6;
+}
+.topListItem a:hover {
+  color: #4B4C4D;
 }
 .topButtonFB {
   font-size: 20px;

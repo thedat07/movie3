@@ -1,7 +1,6 @@
 import styled from './listitem.module.css'
 import Link from 'next/link'
 import slugify from 'react-slugify';
-import Image from 'next/image'
 export default function ListItem({ isImage, isLink, isMovie, isName }) {
     return (
         <>

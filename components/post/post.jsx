@@ -6,7 +6,6 @@ import slugify from 'react-slugify'
 export default function Posts({ backdrop_path, original_title, release_date, overview, genres = [], LinkURL = 1, movie = false }) {
     return (
         <div className={style.post}>
-
             <Link href={
                 movie ?
                     `/movie/${LinkURL}~${slugify(original_title)}` :
@@ -26,7 +25,6 @@ export default function Posts({ backdrop_path, original_title, release_date, ove
                         />
                 }
             </Link>
-
             <div className={style.postInfo}>
                 <div className={style.postCats}>
                     {
@@ -48,8 +46,6 @@ export default function Posts({ backdrop_path, original_title, release_date, ove
                 <span className={style.postDate}>{release_date}</span>
                 <p className={style.postDesc}>{overview}</p>
             </div>
-
-
         </div>
     )
 }

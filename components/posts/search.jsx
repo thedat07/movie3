@@ -44,16 +44,15 @@ export default function Posts() {
     };
     return (
         <Tabs defaultActiveKey="1" className={style.tab}>
-
             <TabPane tab="Movie" key="1" >
-                <div className={style.posts}>
+                
                     <TabPanePage data={dataMovie} page={page} loading={loading} changePage={changePage} movie={true}></TabPanePage>
-                </div>
+                
             </TabPane>
             <TabPane tab="Tv" key="2" >
-                <div className={style.posts}>
+               
                     <TabPanePage data={dataTv} page={page} loading={loading} changePage={changePage} movie={false}></TabPanePage>
-                </div>
+                
             </TabPane>
 
         </Tabs>

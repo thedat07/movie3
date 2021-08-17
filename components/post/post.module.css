@@ -1,6 +1,9 @@
 .post{
     width: 385px;
     margin: 0px 25px 40px 25px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 .postImg{
     width: 100%;

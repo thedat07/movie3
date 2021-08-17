@@ -8,12 +8,13 @@ export default function PopularMovie({ dataMovies, loading, movie }) {
     if (loading || helper.isEmptyObject(dataMovies)) {
         return (
             <Row gutter={[16, 16]}>
-                <Col span={12} >  <Post></Post></Col>
-                <Col span={12} >  <Post></Post></Col>
+                <Col xxl={{ span: 8 }} span={12} ><Post></Post></Col>
+                <Col xxl={{ span: 8 }} span={12}  ><Post></Post></Col>
+                <Col xxl={{ span: 8 }} span={12}  ><Post></Post></Col>
             </Row>
         )
     }
-    
+
     return (
         <>
             {
@@ -22,7 +23,7 @@ export default function PopularMovie({ dataMovies, loading, movie }) {
                         {dataMovies.results.map((item, index) => {
                             return (
 
-                                <Col span={12} key={item.id} >
+                                <Col xxl={{ span: 8 }} span={12} key={item.id}>
                                     <Post
                                         backdrop_path={item.backdrop_path}
                                         original_title={item.original_title}
@@ -40,10 +41,10 @@ export default function PopularMovie({ dataMovies, loading, movie }) {
                     </Row> :
                     <Row gutter={[16, 16]}>
                         {dataMovies.results.map((item, index) => {
-                           
+
                             return (
 
-                                <Col span={12} key={item.id}  >
+                                <Col xxl={{ span: 8 }} span={12} key={item.id}  >
                                     <Post
                                         backdrop_path={item.backdrop_path}
                                         original_title={item.name}
